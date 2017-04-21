@@ -1,0 +1,20 @@
+{
+  "name": "heroku-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "client/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Riski24/heroku-demo.git"
+  },
+  "author": "Kyle Anson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Riski24/heroku-demo/issues"
+  },
+  "homepage": "https://github.com/Riski24/heroku-demo#readme"
+}
