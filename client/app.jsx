@@ -1,8 +1,8 @@
 import React from 'react';
 
-module.exports = () => (
+module.exports = ({working}) => (
 	<div>
 		<h1>Hello hrr22 and hrr23!</h1>
-		<p>This app is <span>{process.env.working || 'not'}</span> working properly!</p>
+		<p>This app is <span>{working}</span> working properly!</p>
 	</div>
 );

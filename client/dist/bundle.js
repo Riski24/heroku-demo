@@ -9514,7 +9514,7 @@ module.exports = getIteratorFn;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(process) {
+
 
 var _react = __webpack_require__(50);
 
@@ -9522,7 +9522,8 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-module.exports = function () {
+module.exports = function (_ref) {
+	var working = _ref.working;
 	return _react2.default.createElement(
 		'div',
 		null,
@@ -9538,13 +9539,12 @@ module.exports = function () {
 			_react2.default.createElement(
 				'span',
 				null,
-				process.env.working || 'not'
+				working
 			),
 			' working properly!'
 		)
 	);
 };
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 82 */
@@ -9577,7 +9577,9 @@ var _app2 = _interopRequireDefault(_app);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_reactDom2.default.render(_react2.default.createElement(_app2.default, null), document.getElementById('app'));
+$.get('api/working').then(function (response) {
+	_reactDom2.default.render(_react2.default.createElement(_app2.default, { working: response }), document.getElementById('app'));
+});
 
 /***/ }),
 /* 84 */
