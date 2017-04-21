@@ -1,0 +1,16 @@
+body {
+	text-align: center;
+	font-family: sans-serif;
+}
+
+h1 {
+	font-size: 80px;
+}
+
+p {
+	font-size: 40px;
+}
+
+span {
+	font-weight: bold;
+}
